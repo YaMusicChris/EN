@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" href="https://yamusicchris.github.io/EN/Logo.png" type="image/x-icon">
+    <link rel="icon" href="https://yamusicchris.github.io/icon.png" type="image/x-icon">
     <style>
         /* Embedded CSS */
         body {
@@ -56,32 +56,54 @@
             background-color: #1a1a1a;
             margin-top: 2rem;
         }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px; /* Change this value if you want a different maximum width */
+            margin: 0 auto;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 12px; /* Optional */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="https://yamusicchris.github.io/EN/Logo.png" alt="Ya! Music Chris Logo">
+    <img src="https://yamusicchris.github.io/icon.png" alt="Ya! Music Chris Logo">
     <nav>
-        <a href="https://yamusicchris.github.io/EN/albums/">Albums</a>
-        <a href="https://yamusicchris.github.io/EN/contact/">Contact</a>
+        <a href="https://yamusicchris.github.io/EN/songs/">Songs</a>
     </nav>
 </header>
 
 <section class="hero">
-    <img src="https://yamusicchris.github.io/EN/Banner.png" alt="Ya! Music Chris Cover">
-    <h1>Welcome to Ya! Music Chris!</h1>
-    <p>A musical space by Ya! Music Chris</p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vVIJOP2ov_M?si=O5uKXr5nePIms8-P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h1>Welcome to the official Ya! Music Chris website!</h1>
+
+    <p>
+        This is the musical space of Ya! Music Chris, a platform currently under development.
+        Soon, we will launch our own music player so you can listen to music without ads and outside of YouTube.
+        You'll also be able to download our songs directly from the website.
+    </p>
 </section>
 
 <footer>
-    &copy; 2026 Ya! Music Chris. All rights reserved.
+    &copy; 2023 - 2026 Ya! Music Chris. All rights reserved.
 </footer>
 
 <script>
-    // Embedded JS
-    console.log("Welcome to Ya! Music Chris - EN");
-    // You can add future functions, animations, player, etc. here
+    console.log("Welcome to your browser's console, and welcome to the official Ya! Music Chris platform in English.");
 </script>
 
 </body>
